@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    padding: 1vh 7vw;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.logo__nav{
+    display: flex;
+    align-items: center;
+}
+nav > a{
+    margin-left: 3vw;
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+
+}
+.usuario{
+    display: flex;
+    align-items: center;
+}
+.usuario__foto{
+    width: 3vw;
+    clip-path: circle();
+    margin-left: 1vw;
+}
+.usuario__item{
+    margin-left: 1vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+#search{
+    border: none;
+    padding: .5rem;
+    width: 20vw;
+    font-size: 1rem;
+/*     font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+ */
+
+}
+
+#search:focus{
+    border-radius: 25px;
+    outline-color: #c4c7c9;
+
+}
+
+/* ::placeholder{
+    font: var(--fa-font-solid);
+    content: "\f007";
+    color: #82858a;
+} */
+::placeholder{
+    background-image: url(./search.svg);
+    background-repeat: no-repeat;
+    background-position: 0.1rem center;
+    padding-left: 1.5rem;
+    font-size: 1.1rem;
+}
